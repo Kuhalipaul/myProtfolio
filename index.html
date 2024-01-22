@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2e941346bb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"> <span class="k">K</span>UHALI</h1>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificate">Certificate & Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Kuhali</span> Paul .</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------about---------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, Kuhali Paul is my name. I am a computer science engineering major pursuing a bachelor's
+                        degree at Seacom Engineering College.I am currently enrolled in a full-stack web development
+                        course offered by Coding Ninjas. I am now studying C++, data structures in C++, front-end
+                        development in HTML5, CSS (framework),JavaScript and react. I am also handling code studio
+                        problems, gfg potd and leetcode top interview problems.Studying JavaScript, HTML, CSS, jQuery,
+                        React, and other technologies Okay, so my goal is to become a proficient full-stack web
+                        developer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++</span><br>Programing Language</li>
+                            <li><span>Data Structure</span><br>in C++ programming Language</li>
+                            <li><span>HTML</span><br>Hyper Text Markup Language in Front-End from Web Development</li>
+                            <li><span>CSS</span><br>Cascading Style Sheets in Front-End from Web Development</li>
+                            <li><span>JS</span><br>Java Script in Front-End from Web Development</li>
+                            <li><span>React</span><br>from Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Shopcult E-commerce Website</span><br>ReactJS,React Router,Redux Toolkit,Material
+                                UI,Firebase,CommerceJS,SwiperJS,React Hook Form,Yup Schema Validation,Google Maps,Canvas
+                                Confetti</li>
+                            <li><span>Snake Game</span><br>HTML,CSS,Java Script</li>
+                            <li><span>Weather App</span><br>HTML,CSS,Java Script,OpenWeather API’s</li>
+                            <li><span>Responsive Website</span><br>HTML and CSS Bootstrap Framework media query for responsive Website</li>
+                            <li><span>TailwindCSS Website</span><br>HTML,tailwindCSS</li>
+                            <li><span>Animated Website</span><br>HTML,CSS,JS,GSAP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2023 (Bachelor of Technology)</span><br>Seacom Engineering College ,
+                                MAKAUT</li>
+                            <li><span>2017-2020 (Diploma in Engineering)</span><br>Global Institute Science & Technology
+                                , WBSCTE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------Projects-------------------------------------------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Shopcult E-commerce Website</h2>
+                    <p>Shopcult is a fully fledged modern e-commerce website, built using various modern services and
+                        technologies such as ReactJS, Redux Toolkit, Material UI, CommerceJS, Firebase, Stripe, SwiperJS
+                        etc. It includes some amazing features such as authentication, wishlisting items, filtering
+                        items, adding items to cart, placing orders, payment gateway and much more!</p>
+                    <a href="https://github.com/samimmiddey/shopcult">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Snake Game</h2>
+                    <p>Snake-Game Snake Game is a single-player game where the snake gets bigger by eating the food and
+                        tries to save itself from the boundary of the rectangle and if the snake eats their own body the
+                        game will be over.Snake Game is a single player game which is created by html ,css and
+                        javascript.</p>
+                    <a href="https://github.com/Kuhalipaul/Snake-Game">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Weather App</h2>
+                    <p>Weather app is Real time weather forcast report with pictorial representation, using HTML, CSS,
+                        JS and OpenWeather API’s.</p>
+                    <a href="https://github.com/Kuhalipaul/Weather-App">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Responsive Website</h2>
+                    <p>Make a responsive website with html and CSS which shine on every device, from smartphones and
+                        tablets to desktops and laptops.I made this project with HTML and CSS Bootstrap Framework media query for responsive Website.</p>
+                    <a href="https://github.com/Kuhalipaul/resposive_website">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>TailwindCSS Website</h2>
+                    <p>Website design with HTML, CSS and Javascript,Explore how Tailwind CSS can supercharge web design
+                        projects</p>
+                    <a href="https://github.com/Kuhalipaul/TailwindCSS_Website">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Animated Website</h2>
+                    <p>This dynamic website utilizes HTML, CSS, and JavaScript to teach fundamental web development,
+                        starting from creating the structure using HTML, enhancing visuals with CSS, and implementing
+                        interactive animations using various JavaScript libraries and frameworks.</p>
+                    <a href="https://github.com/Kuhalipaul/New_Animated_Website_Project">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------Certificate & Achievements----------------------------------------------------------- -->
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">Certificate</h1>
+            <div class="certificate-list">
+                <div class="work">
+                    <img src="images/c-lang.png">
+                    <div class="layer">
+                        <h3>Certificate of Completion Introduction to c++</h3>
+                        <a href="https://drive.google.com/file/d/1E4ZDjJeif5Pu7Bkhra09dUXxn_KTw3io/view?usp=sharing"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/c-language.png">
+                    <div class="layer">
+                        <h3>Certificate of Excellence Introduction to c++</h3>
+                        <a href="https://drive.google.com/file/d/1R14RME3NLrrDkD3QNiD7KbCXuK2u_vKT/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/DSA-Algo.png">
+                    <div class="layer">
+                        <h3>Certificate of Completion Data Structure in c++</h3>
+                        <a href="https://drive.google.com/file/d/1Y1yfznvyMydFO-ou-D-IscqQiJTODqSd/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/datastructure.png">
+                    <div class="layer">
+                        <h3>Certificate of Excellence Data Structure in c++</h3>
+                        <a href="https://drive.google.com/file/d/1ir7svl0Zx8XSj2fPPm8JR5CEPfvaMIRr/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!------------------------------contact------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contect Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Kuhalipaul1999@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile"></i>8910663489</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kuhali-paul-7766b8250/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Kuhalipaul"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Kuhali Paul-Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                  <span id="msg"></span>  
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Created <i class="fa-solid fa-heart"></i> by Kuhali Paul</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- Highly motivated and talented web development enthusiast, adept at HTML, CSS, JavaScript, and React. Passionately tackling daily challenges on platforms like CodeStudio, LeetCode, and GeeksforGeeks. Demonstrated creativity through impactful projects. Eager to contribute innovative skills and a fresh perspective to a dynamic web development team.
+
+
+
+
+
+
+ -->
+ <!-- Strongly driven and gifted web developer with a passion for web development; proficient in HTML, CSS, JavaScript, and React. energetically taking on everyday obstacles on sites such as CodeStudio, LeetCode, and GeeksforGeeks. displayed originality by working on worthwhile initiatives. eager to add creative abilities and a new viewpoint to a vibrant web development team. -->
